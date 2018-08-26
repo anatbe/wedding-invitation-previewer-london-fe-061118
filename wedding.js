@@ -26,7 +26,7 @@ window.onload = function(){
 }
 function changeToVintage() {
     document.getElementById("invitation").style.backgroundImage = "url('https://i.pinimg.com/736x/37/91/80/379180a973e0f7d95674eff7420b281f--vintage-backgrounds-vintage-wallpapers.jpg')";
-
+document.getElementById("vintage").style.fontFamily = listValue;
 }
 function changeToSunset(){
    document.getElementById("invitation").style.backgroundImage = "url('https://i.imgur.com/EIQsLdi.jpg')";

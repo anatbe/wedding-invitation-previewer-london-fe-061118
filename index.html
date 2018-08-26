@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="style.css">
+<title>Wedding Invitation Designer</title>
+<script src="wedding.js"></script>
+</head>
+<body background="https://images.unsplash.com/photo-1517607648415-b431854daa86?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c8c3c7f6a8f5ded74a4282688d03f3e8&auto=format&fit=crop&w=1492&q=80">
+<header>Wellcome to the Wedding Invitation Designer!
+<br>Dreams wedding start with Invitation </header>
+
+<article>Congratulations your big day is coming soon!
+<br>  we know you have so much on your head those days <br> and don't relly have the time for thinking about the 
+invitation designe,<br> so we did it for you! <br>  All you need to do is fill in the details <br> and we will make all the rest...
+<br>
+<br>
+</article>
+<p class="step1"> Let's start your invitation!<br>
+<h2>  First step, choose a designe <br> You can choose from three kind of designe and make it personal for your guests if you wish.</h2>
+
+<nav>
+  <div class="btn-group">
+  <button class="navlink Vintage" id="vintage">Vintage</button>
+  <button class="navlink sunset" id="sunset" >Sunset</button>
+  <button class="navlink summertime" id="summertime">Summertime</button>
+  </div>
+  <div class="font" id="Vintage">
+    
+  
+  </div>
+</nav>
+
+
+<div class="form-container">
+  
+  <div>
+    <div class="form">
+       <p class="step2">Step two, just fill in the details</p>
+
+      <form class="flex-container">
+
+        <div class="guest">
+          <h5 class="form-title">Make it Personal!<br>fill in the name of your guest: </h5>
+          <p> (You don't have to if you don't want)</p>
+          Guest name:<br>
+          <input type="text" id="guest" name="Guest name" oninput="onForm()"><br>
+          Guest name 2:<br>
+          <input type="text"  id="guest2" name="Guest name 2" oninput="onForm()"><br>
+          Guest last name:<br>
+          <input type="text" id="last-name" name="Last name " oninput="onForm()"><br>
+          <br>
+          <br>
+          <div class="print" id="print">
+            
+          Now your invitation is<br> redy to be print! <br> click to print it!
+            <div class="print-button">
+              <button onclick="myFunction()">Print your invitation</button>
+            </div>
+           </div>
+
+        </div>
+        
+        
+        <div class="couple">
+          <h5>The wedding details:</h5>
+            Couple name:<br>
+           The Bride:<br>
+            <input type="text" id="bride" name="Bride name" oninput="onForm()"><br>
+           The Groom:<br>
+            <input type="text" id="groom" name="Groom name" oninput="onForm()"><br>
+            Date:<br>
+            <input type="text" id="date" name="Date" oninput="onForm()"><br>
+            Hour:<br>
+            <input type="text" id="hour" name="Hour " oninput="onForm()"><br>
+            Location: <br>
+            <input type="text" id="location" name="Location" oninput="onForm()">
+            
+        </div>
+        
+        <div class="invitation-box-container">
+            <div class="invitation-box" id="invitation">
+              <p class="invitation-text">Dear </p>
+              <p class="guest-names invitation-text" id="guests"> </p>
+              <p class="invitation-text">You are invited to celebrate the marriage of</p>
+              <p class="bride-name invitation-text" id="bride-text"></p>
+              <p class="and invitation-text">&</p>
+              <p class="groom-name invitation-text" id="groom-text"></p>
+              <p class="date invitation-text" id="date-text"></p>
+              <p class="hour invitation-text" id="hour-text"></p>
+              <p class="location  invitation-text" id="location-text"></p>
+              
+            </div>
+        </div>
+        
+      </form>
+   
+    </div>
+  </div>
+
+
+</div>
+</body>
+</html>
